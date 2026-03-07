@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services — Web Design, SEO & More | The Free Website Wizards</title>
+    <meta name="description" content="Everything included with your free website from The Free Website Wizards — custom design, mobile responsive development, SEO, SSL, and more. Plus premium add-ons.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Services — Web Design, SEO & More | The Free Website Wizards">
+    <meta property="og:description" content="Everything included with your free website — custom design, mobile responsive development, SEO, SSL, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thefreewebsitewizards.com/services">
+    <meta property="og:image" content="https://thefreewebsitewizards.com/images/og-services.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#0A0E1A] text-slate-100 font-body antialiased overflow-x-hidden">
+
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-amber-500 focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">
+        Skip to content
+    </a>
+
+    <!-- Fixed Navigation -->
+    <header class="fixed top-0 w-full bg-[#0A0E1A]/80 backdrop-blur-xl border-b border-slate-700/50 z-20">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+            <!-- Logo -->
+            <a href="/" class="flex items-center space-x-2 font-heading font-bold text-xl text-white">
+                <svg class="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg>
+                <span>TFWW</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/" class="text-slate-300 hover:text-white transition-colors duration-200">Home</a>
+                <a href="portfolio.html" class="text-slate-300 hover:text-white transition-colors duration-200">Portfolio</a>
+                <a href="services.html" class="text-white font-semibold" aria-current="page">Services</a>
+                <a href="offer.html" class="text-slate-300 hover:text-white transition-colors duration-200">Offer</a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-6 py-2.5 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] min-h-[44px]">
+                    Apply Now
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 rounded-lg" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-[#0A0E1A]/95 backdrop-blur-xl z-40 hidden md:hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="/" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Home</a>
+                <a href="portfolio.html" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Portfolio</a>
+                <a href="services.html" class="text-purple-400 text-2xl font-heading font-semibold" aria-current="page">Services</a>
+                <a href="offer.html" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Offer</a>
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] mt-4">
+                    Apply Now
+                </button>
+                <button id="mobile-menu-close" class="text-slate-400 hover:text-white mt-8 p-2 min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 rounded-lg" aria-label="Close menu">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="relative py-16 md:py-24 pt-32 md:pt-40 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A] overflow-hidden">
+            <!-- Aurora blobs -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none motion-reduce:animate-none" aria-hidden="true">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-aurora"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-violet-600/15 rounded-full blur-3xl animate-aurora" style="animation-delay: -7s;"></div>
+                <div class="absolute top-1/2 left-1/2 w-72 h-72 bg-indigo-600/10 rounded-full blur-3xl animate-aurora" style="animation-delay: -14s;"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-heading font-bold text-slate-100 leading-[1.1]" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+                    Our Services
+                </h1>
+                <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto" style="line-height: 1.6;">
+                    Everything you need to launch a professional online presence — included free with every website we build, plus premium add-ons to take your business further.
+                </p>
+            </div>
+        </section>
+
+        <!-- Free Services Section -->
+        <section class="py-16 md:py-24 bg-[#0A0E1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-slate-100 mb-4" style="font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.2;">
+                        Included with Every Free Website
+                    </h2>
+                    <p class="text-slate-400 text-lg max-w-xl mx-auto">No hidden fees, no catch. Every project we take on gets the full package.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Free Service 1: Custom Web Design -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Palette -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Custom Web Design</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Every website is designed from scratch to match your brand, your industry, and your audience. No cookie-cutter templates here.</p>
+                    </div>
+
+                    <!-- Free Service 2: Mobile Responsive Development -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Smartphone -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Mobile Responsive Development</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Your website looks and works perfectly on every device — phones, tablets, and desktops. Over 60% of web traffic is mobile, and we have you covered.</p>
+                    </div>
+
+                    <!-- Free Service 3: Basic SEO Setup -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Search -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Basic SEO Setup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">We configure meta tags, structured data, sitemaps, and Google Search Console so your business can be found by customers searching online.</p>
+                    </div>
+
+                    <!-- Free Service 4: SSL Security -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Shield Check -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">SSL Security</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Every site comes with a free SSL certificate for encrypted HTTPS connections. Your visitors see the padlock icon, building instant trust.</p>
+                    </div>
+
+                    <!-- Free Service 5: Contact Forms -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Mail -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Contact Forms</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Professional contact forms that send inquiries directly to your inbox. Never miss a potential customer reaching out to your business.</p>
+                    </div>
+
+                    <!-- Free Service 6: 30-Day Post-Launch Support -->
+                    <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 mb-5">
+                            <!-- Lucide: Headphones -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">30-Day Post-Launch Support</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">After your site goes live, we provide a full month of support for tweaks, fixes, and questions. You are never left on your own.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Add-Ons Section (Light contrast) -->
+        <section class="py-16 md:py-24 bg-slate-50 text-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-heading font-bold text-slate-900 mb-4" style="font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.2;">
+                        Premium Add-Ons
+                    </h2>
+                    <p class="text-slate-600 text-lg max-w-xl mx-auto">Take your website further with our professional add-on services, available at affordable prices.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Add-On 1: Advanced SEO -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: TrendingUp -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">Advanced SEO</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$149/mo</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Ongoing keyword research, content optimization, monthly ranking reports, and competitor analysis to drive organic traffic to your site.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                    <!-- Add-On 2: E-Commerce Setup -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: ShoppingCart -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">E-Commerce Setup</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$299 one-time</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Full online store setup with product listings, shopping cart, secure checkout, payment gateway integration, and inventory management.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                    <!-- Add-On 3: Logo & Branding -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: PenTool -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"/><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"/><path d="m2.3 2.3 7.286 7.286"/><circle cx="11" cy="11" r="2"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">Logo &amp; Branding</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$199</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Professional logo design, color palette, typography selection, and brand guidelines to give your business a cohesive, polished identity.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                    <!-- Add-On 4: Content Writing -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: FileText -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">Content Writing</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$99/page</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Professionally written, SEO-optimized website copy that speaks to your customers and communicates your value clearly and persuasively.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                    <!-- Add-On 5: Social Media Setup -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: Share2 -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">Social Media Setup</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$149</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Complete setup of your business profiles on Facebook, Instagram, and Google Business, branded and optimized for visibility and engagement.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                    <!-- Add-On 6: Ongoing Maintenance -->
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 hover:border-purple-300 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 flex flex-col">
+                        <div class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-purple-100 text-purple-600 mb-5">
+                            <!-- Lucide: Wrench -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 class="font-heading font-semibold text-xl text-slate-900 mb-1">Ongoing Maintenance</h3>
+                        <p class="text-purple-600 font-heading font-bold text-lg mb-3">$49/mo</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 flex-1">Monthly updates, security patches, performance monitoring, and content changes so your site stays fresh, fast, and secure long after launch.</p>
+                        <button data-modal="apply" data-track="cta_click" class="w-full border-2 border-purple-500 text-purple-600 hover:bg-purple-500/10 font-semibold px-6 py-3 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 min-h-[44px]">
+                            Inquire
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-heading font-bold text-slate-100 mb-6" style="font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.2;">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-slate-400 text-lg max-w-xl mx-auto mb-8">
+                    Apply today and let our team build you a professional website at no cost. Limited spots available each month.
+                </p>
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] min-h-[44px] text-lg">
+                    Apply for Your Free Website
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#141827] border-t border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Navigation Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/" class="text-slate-400 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="portfolio.html" class="text-slate-400 hover:text-white transition-colors duration-200">Portfolio</a></li>
+                        <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="offer.html" class="text-slate-400 hover:text-white transition-colors duration-200">Special Offer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/#testimonials" class="text-slate-400 hover:text-white transition-colors duration-200">Testimonials</a></li>
+                        <li><a href="/#faq" class="text-slate-400 hover:text-white transition-colors duration-200">FAQ</a></li>
+                        <li><a href="/#why-free" class="text-slate-400 hover:text-white transition-colors duration-200">Why Free?</a></li>
+                        <li><a href="/#how-it-works" class="text-slate-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Social Media</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61577287178455" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thefreewebsitewizards" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@thefreewebsitewizards" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.02a6.34 6.34 0 0 0-.88-.07 6.34 6.34 0 0 0 0 12.68 6.34 6.34 0 0 0 6.34-6.34V9.06a8.22 8.22 0 0 0 3.76.92V6.69z"/></svg>
+                                TikTok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/17066641792" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            dylan@thefreewebsitewizards.com
+                        </li>
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +1 (706) 664-1792
+                        </li>
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            24/7 Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">
+                    &copy; 2025 <span class="text-purple-400 font-semibold">The Free Website Wizards</span>. All rights reserved.
+                </p>
+                <div class="flex items-center space-x-6 text-sm">
+                    <a href="privacy-policy.html" class="text-slate-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="text-slate-400 hover:text-white transition-colors duration-200">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div id="mobile-cta-bar" class="fixed bottom-0 left-0 right-0 bg-[#0A0E1A]/95 backdrop-blur-xl border-t border-slate-700/50 p-3 z-20 md:hidden translate-y-full transition-transform duration-300">
+        <button data-modal="apply" data-track="cta_click" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold py-3 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px]">
+            Apply for Your Free Website
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/analytics.js" defer></script>
+    <script src="js/ab-testing.js" defer></script>
+    <script src="js/modal-form.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

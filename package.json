@@ -1,0 +1,13 @@
+{
+  "name": "tfww-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i css/input.css -o css/styles.css --minify",
+    "dev": "npx @tailwindcss/cli -i css/input.css -o css/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}

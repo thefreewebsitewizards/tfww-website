@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio — Free Websites We've Built | The Free Website Wizards</title>
+    <meta name="description" content="Browse our portfolio of professionally designed free websites built for real small businesses. See the quality of work The Free Website Wizards deliver at no cost.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Portfolio — Free Websites We've Built | The Free Website Wizards">
+    <meta property="og:description" content="Browse our portfolio of professionally designed free websites built for real small businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thefreewebsitewizards.com/portfolio">
+    <meta property="og:image" content="https://thefreewebsitewizards.com/images/og-portfolio.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#0A0E1A] text-slate-100 font-body antialiased overflow-x-hidden">
+
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-amber-500 focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">
+        Skip to content
+    </a>
+
+    <!-- Fixed Navigation -->
+    <header class="fixed top-0 w-full bg-[#0A0E1A]/80 backdrop-blur-xl border-b border-slate-700/50 z-20">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Main navigation">
+            <!-- Logo -->
+            <a href="/" class="flex items-center space-x-2 font-heading font-bold text-xl text-white">
+                <svg class="w-8 h-8 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/></svg>
+                <span>TFWW</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/" class="text-slate-300 hover:text-white transition-colors duration-200">Home</a>
+                <a href="portfolio.html" class="text-white font-semibold" aria-current="page">Portfolio</a>
+                <a href="services.html" class="text-slate-300 hover:text-white transition-colors duration-200">Services</a>
+                <a href="offer.html" class="text-slate-300 hover:text-white transition-colors duration-200">Offer</a>
+            </div>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-6 py-2.5 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] min-h-[44px]">
+                    Apply Now
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 rounded-lg" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-[#0A0E1A]/95 backdrop-blur-xl z-40 hidden md:hidden" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="/" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Home</a>
+                <a href="portfolio.html" class="text-purple-400 text-2xl font-heading font-semibold" aria-current="page">Portfolio</a>
+                <a href="services.html" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Services</a>
+                <a href="offer.html" class="text-white text-2xl font-heading font-semibold hover:text-purple-400 transition-colors duration-200">Offer</a>
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] mt-4">
+                    Apply Now
+                </button>
+                <button id="mobile-menu-close" class="text-slate-400 hover:text-white mt-8 p-2 min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 rounded-lg" aria-label="Close menu">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="relative py-16 md:py-24 pt-32 md:pt-40 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A] overflow-hidden">
+            <!-- Aurora blobs -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none motion-reduce:animate-none" aria-hidden="true">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-aurora"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-violet-600/15 rounded-full blur-3xl animate-aurora" style="animation-delay: -7s;"></div>
+                <div class="absolute top-1/2 left-1/2 w-72 h-72 bg-indigo-600/10 rounded-full blur-3xl animate-aurora" style="animation-delay: -14s;"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="font-heading font-bold text-slate-100 leading-[1.1]" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+                    Our Magical Portfolio
+                </h1>
+                <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto" style="line-height: 1.6;">
+                    Real websites we have built for real businesses — completely free. Browse our work and imagine what we can create for you.
+                </p>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="py-16 md:py-24 bg-[#0A0E1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Card 1: Carrying Cubs Daycare -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Carrying Cubs Daycare</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Childcare</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Carrying Cubs Daycare</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A warm, welcoming website for a local daycare center, designed to build trust with parents and showcase their caring environment.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Olympic Roofing -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Olympic Roofing</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Roofing</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Olympic Roofing</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A professional, high-converting site for a roofing contractor featuring service areas, project galleries, and easy quote requests.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Dream Quest Adventures -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Dream Quest Adventures</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Travel &amp; Tours</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Dream Quest Adventures</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">An immersive website for an adventure tour company, complete with trip listings, booking integration, and stunning visuals.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Karhaus Design -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Karhaus Design</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Automotive</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Karhaus Design</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A sleek, modern website for an automotive design studio, highlighting their custom vehicle builds and detailing services.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: JLS Consulting -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">JLS Consulting</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Consulting</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">JLS Consulting</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A polished, authoritative website for a business consulting firm, designed to establish credibility and capture qualified leads.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: All Season HVAC -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">All Season HVAC</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">HVAC</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">All Season HVAC</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A clean, service-focused website for a heating and cooling company, making it easy for homeowners to request service calls.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 7: Bella's Bakery -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Bella's Bakery</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Food &amp; Bakery</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Bella's Bakery</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A charming, appetizing website for a local bakery, featuring an online menu, order forms, and beautiful product photography.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 8: Peak Fitness -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Peak Fitness</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Fitness</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Peak Fitness</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">An energetic, motivating website for a local gym, featuring class schedules, membership plans, and trainer profiles.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Card 9: Coastal Realty -->
+                    <article class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+                        <div class="aspect-video bg-[#1E2338] flex items-center justify-center">
+                            <span class="font-heading font-semibold text-purple-400 text-lg text-center px-4">Coastal Realty</span>
+                        </div>
+                        <div class="p-6 md:p-8">
+                            <span class="inline-block text-xs font-semibold uppercase tracking-wider text-amber-500 bg-amber-500/10 px-3 py-1 rounded-full mb-3">Real Estate</span>
+                            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Coastal Realty</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">A sophisticated real estate website with property listings, virtual tour integration, and agent contact forms.</p>
+                            <a href="#" class="inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold text-sm transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 rounded">
+                                View Site
+                                <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 md:py-24 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-heading font-bold text-slate-100 mb-6" style="font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.2;">
+                    Want a Website Like These?
+                </h2>
+                <p class="text-slate-400 text-lg max-w-xl mx-auto mb-8">
+                    We only accept a limited number of projects each month. Apply now to see if your business qualifies for a free, professionally built website.
+                </p>
+                <button data-modal="apply" data-track="cta_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] min-h-[44px] text-lg">
+                    Apply for Your Free Website
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#141827] border-t border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Navigation Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/" class="text-slate-400 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="portfolio.html" class="text-slate-400 hover:text-white transition-colors duration-200">Portfolio</a></li>
+                        <li><a href="services.html" class="text-slate-400 hover:text-white transition-colors duration-200">Services</a></li>
+                        <li><a href="offer.html" class="text-slate-400 hover:text-white transition-colors duration-200">Special Offer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Explore</h3>
+                    <ul class="space-y-3">
+                        <li><a href="/#testimonials" class="text-slate-400 hover:text-white transition-colors duration-200">Testimonials</a></li>
+                        <li><a href="/#faq" class="text-slate-400 hover:text-white transition-colors duration-200">FAQ</a></li>
+                        <li><a href="/#why-free" class="text-slate-400 hover:text-white transition-colors duration-200">Why Free?</a></li>
+                        <li><a href="/#how-it-works" class="text-slate-400 hover:text-white transition-colors duration-200">How It Works</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Social Media</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61577287178455" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thefreewebsitewizards" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@thefreewebsitewizards" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.02a6.34 6.34 0 0 0-.88-.07 6.34 6.34 0 0 0 0 12.68 6.34 6.34 0 0 0 6.34-6.34V9.06a8.22 8.22 0 0 0 3.76.92V6.69z"/></svg>
+                                TikTok
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/17066641792" class="text-slate-400 hover:text-white transition-colors duration-200 inline-flex items-center" target="_blank" rel="noopener noreferrer">
+                                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h3 class="font-heading font-semibold text-sm uppercase tracking-wider text-slate-100 mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            dylan@thefreewebsitewizards.com
+                        </li>
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            +1 (706) 664-1792
+                        </li>
+                        <li class="text-slate-400 inline-flex items-center">
+                            <svg class="w-5 h-5 mr-2 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            24/7 Available
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-slate-700/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">
+                    &copy; 2025 <span class="text-purple-400 font-semibold">The Free Website Wizards</span>. All rights reserved.
+                </p>
+                <div class="flex items-center space-x-6 text-sm">
+                    <a href="privacy-policy.html" class="text-slate-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="text-slate-400 hover:text-white transition-colors duration-200">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div id="mobile-cta-bar" class="fixed bottom-0 left-0 right-0 bg-[#0A0E1A]/95 backdrop-blur-xl border-t border-slate-700/50 p-3 z-20 md:hidden translate-y-full transition-transform duration-300">
+        <button data-modal="apply" data-track="cta_click" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold py-3 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px]">
+            Apply for Your Free Website
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/analytics.js" defer></script>
+    <script src="js/ab-testing.js" defer></script>
+    <script src="js/modal-form.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>

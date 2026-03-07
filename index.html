@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Free Website Wizards — Free Custom Websites for Small Businesses</title>
+  <meta name="description" content="We build free, custom-coded, professional websites for small businesses. No templates, no hidden fees. Apply in under a minute.">
+  <meta property="og:title" content="The Free Website Wizards — Your Free Website is Waiting">
+  <meta property="og:description" content="Professional, custom-coded websites for small businesses — completely free. No catch, no templates, no hidden fees.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefreewebsitewizards.com">
+  <meta property="og:image" content="https://thefreewebsitewizards.com/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#0A0E1A] text-slate-100 font-body antialiased overflow-x-hidden">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-amber-500 focus:text-slate-900 focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">
+    Skip to content
+  </a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="fixed top-0 w-full bg-[#0A0E1A]/80 backdrop-blur-xl border-b border-slate-700/50 z-20">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16" aria-label="Primary navigation">
+      <!-- Logo -->
+      <a href="/" class="font-heading font-bold text-lg text-slate-100 hover:text-purple-400 transition-colors duration-200 whitespace-nowrap">
+        The Free Website Wizards
+      </a>
+
+      <!-- Desktop Nav -->
+      <ul class="hidden md:flex items-center gap-8 font-heading text-sm font-500">
+        <li><a href="/" class="text-slate-300 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">Home</a></li>
+        <li><a href="portfolio.html" class="text-slate-300 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">Portfolio</a></li>
+        <li><a href="services.html" class="text-slate-300 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">Services</a></li>
+        <li><a href="offer.html" class="text-slate-300 hover:text-white hover:bg-white/5 px-4 py-2 rounded-lg transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">Special Offer</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <button data-modal="apply" data-track="cta_nav_click" class="hidden md:inline-flex bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-6 py-2.5 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] motion-reduce:transition-none">
+        Apply Now
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button id="nav-toggle" class="md:hidden p-2 text-slate-300 hover:text-white cursor-pointer min-h-[44px] min-w-[44px] flex items-center justify-center focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== MOBILE NAV OVERLAY ===== -->
+  <div id="nav-menu" class="fixed inset-0 bg-[#0A0E1A]/95 backdrop-blur-xl z-40 hidden" role="dialog" aria-label="Mobile navigation">
+    <div class="flex flex-col items-center justify-center h-full gap-8">
+      <button id="nav-close" class="absolute top-5 right-5 p-2 text-slate-300 hover:text-white cursor-pointer min-h-[44px] min-w-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-label="Close navigation menu">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <a href="/" class="text-2xl font-heading font-semibold text-white hover:text-purple-400 transition-colors duration-200">Home</a>
+      <a href="portfolio.html" class="text-2xl font-heading font-semibold text-white hover:text-purple-400 transition-colors duration-200">Portfolio</a>
+      <a href="services.html" class="text-2xl font-heading font-semibold text-white hover:text-purple-400 transition-colors duration-200">Services</a>
+      <a href="offer.html" class="text-2xl font-heading font-semibold text-white hover:text-purple-400 transition-colors duration-200">Special Offer</a>
+      <button data-modal="apply" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">
+        Apply Now
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <!-- Aurora gradient background -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none motion-reduce:hidden" aria-hidden="true">
+        <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-purple-600/30 rounded-full blur-[128px] animate-aurora-1"></div>
+        <div class="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-violet-500/20 rounded-full blur-[128px] animate-aurora-2"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-indigo-600/25 rounded-full blur-[128px] animate-aurora-3"></div>
+      </div>
+      <!-- Static fallback for reduced motion -->
+      <div class="absolute inset-0 bg-gradient-to-b from-purple-950/20 via-[#0A0E1A] to-[#0A0E1A] pointer-events-none hidden motion-reduce:block" aria-hidden="true"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <!-- A/B Headline Variant A -->
+        <h1 data-ab="hero-headline" data-variant="a" class="font-heading font-bold text-slate-100 mb-6" style="font-size:clamp(2.5rem,5vw,4rem);line-height:1.1;">
+          Your Free Website is Waiting
+        </h1>
+        <!-- A/B Headline Variant B -->
+        <h1 data-ab="hero-headline" data-variant="b" class="font-heading font-bold text-slate-100 mb-6" style="font-size:clamp(2.5rem,5vw,4rem);line-height:1.1;" hidden>
+          Get Your Professional Website &mdash; Free
+        </h1>
+
+        <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-8 font-body leading-relaxed">
+          We build powerful, custom-coded websites for small businesses &mdash; completely free. No templates. No hidden fees. Just professional results.
+        </p>
+
+        <button data-modal="apply" data-track="cta_hero_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] text-lg focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] motion-reduce:transition-none">
+          Apply for Your Free Website
+        </button>
+
+        <p class="text-sm text-slate-400 mt-4">Takes less than 1 minute &bull; No hidden fees</p>
+
+        <!-- Trust indicator -->
+        <div class="mt-8 flex items-center justify-center gap-3 text-slate-400 text-sm">
+          <svg class="w-5 h-5 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>200+ websites built</span>
+          <span class="text-slate-600">|</span>
+          <span>5.0 average rating</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOGO SLIDER ===== -->
+    <section class="py-12 bg-[#141827] border-y border-slate-700/50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-sm font-heading font-semibold text-slate-400 uppercase tracking-wider mb-8">Trusted by Amazing Businesses</p>
+      </div>
+      <div class="relative">
+        <div class="flex items-center gap-12 animate-scroll whitespace-nowrap">
+          <!-- First set -->
+          <div class="flex items-center gap-12 shrink-0">
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">JLS</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">All Season</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Carrying Cubs</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Olympic Roofing</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Karhaus</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Dream Quest</div>
+          </div>
+          <!-- Duplicate set for seamless loop -->
+          <div class="flex items-center gap-12 shrink-0">
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">JLS</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">All Season</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Carrying Cubs</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Olympic Roofing</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Karhaus</div>
+            <div class="w-32 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 font-heading font-semibold border border-slate-700/50">Dream Quest</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO PREVIEW ===== -->
+    <section class="py-16 md:py-24 bg-[#0A0E1A]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-center mb-4 text-purple-400" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          A Glimpse of Our Work
+        </h2>
+        <p class="text-center text-slate-400 mb-12 max-w-xl mx-auto">Every website is custom-coded from scratch. No templates, no shortcuts.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project 1 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer">
+            <div class="aspect-video bg-slate-800 flex items-center justify-center text-slate-500">
+              <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Carrying Cubs Daycare</h3>
+              <p class="text-slate-400 text-sm">Full-service daycare website with enrollment forms and parent portal.</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer">
+            <div class="aspect-video bg-slate-800 flex items-center justify-center text-slate-500">
+              <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Olympic Softwash</h3>
+              <p class="text-slate-400 text-sm">Pressure washing service site with online booking and service areas.</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 cursor-pointer">
+            <div class="aspect-video bg-slate-800 flex items-center justify-center text-slate-500">
+              <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading font-semibold text-xl text-slate-100 mb-2">Kar Haus Auto</h3>
+              <p class="text-slate-400 text-sm">Automotive repair shop with appointment scheduling and service catalog.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="portfolio.html" class="border-2 border-purple-500 text-purple-400 hover:bg-purple-500/10 px-6 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-200 inline-block focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">
+            View Full Portfolio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="py-16 md:py-24 bg-[#141827]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-center mb-4 text-purple-400" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          How It Works
+        </h2>
+        <p class="text-center text-slate-400 mb-16 max-w-xl mx-auto">Three simple steps to your professional website. We guide you every step of the way.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <!-- Step 1: Apply -->
+          <div class="animate-on-scroll text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+              <!-- Lucide: ClipboardCheck -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg>
+            </div>
+            <div class="text-xs font-heading font-semibold text-purple-500 uppercase tracking-wider mb-2">Step 1</div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Apply</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Fill out a quick application in under a minute. Tell us about your business and what you need.</p>
+          </div>
+
+          <!-- Step 2: Design -->
+          <div class="animate-on-scroll text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Palette -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <div class="text-xs font-heading font-semibold text-purple-500 uppercase tracking-wider mb-2">Step 2</div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Design</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">We custom-code your website from scratch, tailored to your brand. You review and give feedback.</p>
+          </div>
+
+          <!-- Step 3: Launch -->
+          <div class="animate-on-scroll text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Rocket -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            </div>
+            <div class="text-xs font-heading font-semibold text-purple-500 uppercase tracking-wider mb-2">Step 3</div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Launch</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Your site goes live with hosting, SSL, and a custom domain. We handle all the technical details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES OVERVIEW ===== -->
+    <section class="py-16 md:py-24 bg-[#0A0E1A]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-center mb-4 text-purple-400" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          What We Offer
+        </h2>
+        <p class="text-center text-slate-400 mb-12 max-w-xl mx-auto">Everything your small business needs to thrive online.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1: Web Design -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: PenTool -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Custom Web Design</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Tailored to your brand with unique layouts and features that make you stand out from competitors.</p>
+          </div>
+
+          <!-- Service 2: SEO -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Search -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">SEO Optimization</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Built to rank well in search engines so customers can find your business easily online.</p>
+          </div>
+
+          <!-- Service 3: Maintenance -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Wrench -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Ongoing Maintenance</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">We handle all the technical stuff and provide ongoing support to keep your site running smoothly.</p>
+          </div>
+
+          <!-- Service 4: Responsive -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Smartphone -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Mobile Responsive</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Your website will look perfect on phones, tablets, and desktops &mdash; no matter what device your customers use.</p>
+          </div>
+
+          <!-- Service 5: Hosting -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: Server -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">Free Hosting &amp; SSL</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Fast, reliable hosting with SSL security included. Your site will be secure and lightning fast.</p>
+          </div>
+
+          <!-- Service 6: E-commerce -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 text-center hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="w-12 h-12 mx-auto mb-5 flex items-center justify-center text-purple-400">
+              <!-- Lucide: ShoppingCart -->
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-slate-100 mb-3">E-Commerce Ready</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Need to sell online? We can set up product listings, shopping carts, and secure payment processing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY FREE ===== -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="animate-on-scroll">
+            <h2 class="font-heading font-bold mb-6 text-slate-100" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+              Wait... Why Is It Free?
+            </h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-6">
+              Great question &mdash; and we love the skepticism. Here is the honest answer:
+            </p>
+            <p class="text-slate-400 leading-relaxed mb-6">
+              We grow by helping <em>you</em> grow. About 1 in 5 businesses that receive a free website come back to us for larger paid projects like complex web apps or mobile applications. Those projects fund our free website program.
+            </p>
+            <p class="text-slate-400 leading-relaxed mb-8">
+              We are also partnered with a hosting provider who compensates us for referrals &mdash; while still offering you a discounted rate. That is it. No catch, no hidden charges, no bait-and-switch. Just honest work.
+            </p>
+            <div class="bg-[#141827] border border-slate-700/50 rounded-2xl p-6 flex items-start gap-4">
+              <div class="shrink-0 text-purple-400">
+                <!-- Lucide: Heart -->
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-slate-100 mb-1">Our Promise</h3>
+                <p class="text-slate-400 text-sm">We earn through premium upgrades and partnerships &mdash; never by charging small businesses for their first website.</p>
+              </div>
+            </div>
+          </div>
+          <div class="animate-on-scroll flex justify-center">
+            <div class="w-full max-w-md aspect-square bg-[#141827] border border-slate-700/50 rounded-2xl flex items-center justify-center text-slate-600">
+              <!-- Placeholder for illustration -->
+              <svg class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="py-16 md:py-24 bg-[#141827]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-center mb-4 text-purple-400" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          What Our Clients Say
+        </h2>
+        <p class="text-center text-slate-400 mb-12 max-w-xl mx-auto">Real feedback from real business owners we have helped.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 relative hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="text-purple-500/20 absolute top-4 left-6" aria-hidden="true">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <p class="text-slate-300 leading-relaxed mb-6 mt-8">
+              &ldquo;The Free Website Wizards completely transformed our online presence. Parents can now find us easily and the enrollment process is so much smoother. I could not believe it was free.&rdquo;
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-heading font-bold text-sm shrink-0">TN</div>
+              <div>
+                <p class="font-heading font-semibold text-slate-100 text-sm">Tali N.</p>
+                <p class="text-purple-400 text-xs">Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 relative hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="text-purple-500/20 absolute top-4 left-6" aria-hidden="true">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <p class="text-slate-300 leading-relaxed mb-6 mt-8">
+              &ldquo;I recommend them to every business owner I know. Finally a web design service that actually cares about small businesses. The quality is unbelievable for something that is free.&rdquo;
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-heading font-bold text-sm shrink-0">CH</div>
+              <div>
+                <p class="font-heading font-semibold text-slate-100 text-sm">Cara H.</p>
+                <p class="text-purple-400 text-xs">Entrepreneur</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="animate-on-scroll bg-[#141827] border border-slate-700/50 rounded-2xl p-6 md:p-8 relative hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300">
+            <div class="text-purple-500/20 absolute top-4 left-6" aria-hidden="true">
+              <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+            </div>
+            <p class="text-slate-300 leading-relaxed mb-6 mt-8">
+              &ldquo;Amazing results! Our online bookings increased significantly after the launch. The website perfectly showcases our services and the whole process was painless.&rdquo;
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-heading font-bold text-sm shrink-0">JG</div>
+              <div>
+                <p class="font-heading font-semibold text-slate-100 text-sm">Jen G.</p>
+                <p class="text-purple-400 text-xs">Service Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ACCORDION ===== -->
+    <section class="py-16 md:py-24 bg-[#0A0E1A]">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-center mb-4 text-purple-400" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-slate-400 mb-12">Everything you need to know before applying.</p>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>How is this really free? What is the catch?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>There is no catch. We earn revenue when clients return for larger paid projects (about 1 in 5 do) and through our hosting partner referral program. Your initial website is always 100% free.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>How long does it take to build my website?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>Most websites are completed within 1 to 3 days. We spend 17 to 20 hours hand-coding each site to ensure top quality &mdash; much more than the industry average.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>Do I own the website?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>Yes, absolutely. You own your website and all of its content. We build it, you own it. No strings attached.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>What if I already have hosting?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>No problem. However, to qualify for the free website program, you would need to sign up with our hosting partner. They offer some of the best rates and performance in the industry.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>What if I change my mind and want to cancel?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>No problem at all. You can cancel at any time. There are no contracts or commitments. If we have already started work, you keep whatever has been completed.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>How do I know this is legitimate?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>Check out our portfolio of completed websites, read testimonials from our clients, and feel free to contact our previous customers. We are transparent about our process and happy to provide references.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>I am not tech-savvy. Is that a problem?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>Not at all. We guide you step by step through the entire process with videos and clear instructions. We have worked with everyone from tech-savvy startup founders to business owners who have never had a website before.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-[#141827] border border-slate-700/50 rounded-2xl overflow-hidden">
+            <button class="faq-button w-full text-left p-6 flex items-center justify-between gap-4 cursor-pointer font-heading font-semibold text-slate-100 hover:text-purple-400 transition-colors duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]" aria-expanded="false">
+              <span>Will my website be mobile-friendly?</span>
+              <svg class="w-5 h-5 shrink-0 text-purple-400 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="hidden px-6 pb-6 text-slate-400 leading-relaxed" role="region">
+              <p>Absolutely. Every website we build is fully responsive and tested across phones, tablets, and desktops. Over 60% of web traffic comes from mobile devices, so this is non-negotiable for us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-[#0A0E1A] via-purple-950/20 to-[#0A0E1A]">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading font-bold text-slate-100 mb-6" style="font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.2;">
+          Ready to Get Your Free Website?
+        </h2>
+        <p class="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
+          Join 200+ small businesses who already have a professional online presence &mdash; completely free.
+        </p>
+        <button data-modal="apply" data-track="cta_final_click" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-4 rounded-xl cursor-pointer transition-all duration-200 text-lg min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A] motion-reduce:transition-none">
+          Apply for Your Free Website
+        </button>
+        <p class="text-sm text-slate-400 mt-4">Takes less than 1 minute &bull; No hidden fees &bull; No contracts</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-[#141827] border-t border-slate-700/50 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- About -->
+        <div>
+          <h4 class="font-heading font-semibold text-slate-100 mb-4">About</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            The Free Website Wizards builds free, custom-coded, professional websites for small businesses. No templates, no hidden fees &mdash; just real results.
+          </p>
+        </div>
+
+        <!-- Pages -->
+        <div>
+          <h4 class="font-heading font-semibold text-slate-100 mb-4">Pages</h4>
+          <ul class="space-y-2">
+            <li><a href="/" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Home</a></li>
+            <li><a href="portfolio.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Portfolio</a></li>
+            <li><a href="offer.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Special Offer</a></li>
+            <li><a href="privacy-policy.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-heading font-semibold text-slate-100 mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Custom Web Design</a></li>
+            <li><a href="services.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">SEO Optimization</a></li>
+            <li><a href="services.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">Ongoing Maintenance</a></li>
+            <li><a href="services.html" class="text-slate-400 hover:text-purple-400 text-sm transition-colors duration-200">E-Commerce</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading font-semibold text-slate-100 mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <!-- Lucide: Mail -->
+              <svg class="w-5 h-5 shrink-0 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:dylan@thefreewebsitewizards.com" class="hover:text-purple-400 transition-colors duration-200">dylan@thefreewebsitewizards.com</a>
+            </li>
+            <li class="flex items-center gap-3 text-slate-400 text-sm">
+              <!-- Lucide: Phone -->
+              <svg class="w-5 h-5 shrink-0 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+14699071382" class="hover:text-purple-400 transition-colors duration-200">(469) 907-1382</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-700/50 pt-8 text-center">
+        <p class="text-slate-500 text-sm">&copy; 2025 The Free Website Wizards. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== STICKY MOBILE CTA BAR ===== -->
+  <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 bg-[#0A0E1A]/95 backdrop-blur-xl border-t border-slate-700/50 p-3 z-20 translate-y-full transition-transform duration-300 md:hidden">
+    <button data-modal="apply" data-track="cta_sticky_click" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold py-3 rounded-xl cursor-pointer transition-all duration-200 min-h-[44px] focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0E1A]">
+      Apply for Your Free Website
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/analytics.js" defer></script>
+  <script src="js/ab-testing.js" defer></script>
+  <script src="js/modal-form.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
