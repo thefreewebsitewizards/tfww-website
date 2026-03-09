@@ -5,7 +5,7 @@
   window.__tfwwModalInit = true;
 
   var SUBMIT_ENDPOINT = 'https://lead-intake.dylan-2f6.workers.dev/lead-intake';
-  var CALENDLY_PAGE = '/book.html';
+  var THANK_YOU_PAGE = '/thank-you';
   var currentStep = 0;
   var totalSteps = 4;
   var formData = {};
@@ -311,7 +311,7 @@
           }));
         } catch (e) { /* ignore */ }
 
-        window.location.href = CALENDLY_PAGE;
+        window.location.href = THANK_YOU_PAGE;
       })
       .catch(function (err) {
         submitting.classList.add('hidden');
