@@ -1,0 +1,263 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  --color-brand-bg: #0A0E1A;
+  --color-brand-surface: #141827;
+  --color-brand-surface-light: #1E2338;
+  --color-brand-purple: #9333EA;
+  --color-brand-purple-light: #A855F7;
+  --color-brand-purple-glow: #C084FC;
+  --color-brand-cta: #F59E0B;
+  --color-brand-cta-hover: #FBBF24;
+
+  --animate-aurora: aurora 20s ease infinite;
+  --animate-fade-in: fadeIn 0.6s ease forwards;
+  --animate-fade-in-up: fadeInUp 0.6s ease forwards;
+  --animate-slide-in-left: slideInLeft 0.6s ease forwards;
+  --animate-slide-in-right: slideInRight 0.6s ease forwards;
+  --animate-logo-scroll: logoScroll 30s linear infinite;
+
+  @keyframes aurora {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -20px) scale(1.1); }
+    66% { transform: translate(-20px, 15px) scale(0.9); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes logoScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-slate-100);
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  ::selection {
+    background-color: rgba(147, 51, 234, 0.4);
+    color: white;
+  }
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-brand-cta);
+  color: var(--color-slate-900);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 44px;
+  font-family: var(--font-heading);
+  &:hover {
+    background-color: var(--color-brand-cta-hover);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--color-brand-purple);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid var(--color-brand-purple);
+  color: var(--color-brand-purple-glow);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 44px;
+  font-family: var(--font-heading);
+  &:hover {
+    background-color: rgba(147, 51, 234, 0.1);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--color-brand-purple);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+@utility btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-slate-300);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--color-brand-purple);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+@utility card {
+  background-color: var(--color-brand-surface);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+  &:hover {
+    border-color: rgba(147, 51, 234, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(147, 51, 234, 0.05);
+  }
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+@utility section-heading {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@utility section-subheading {
+  font-size: 1.125rem;
+  color: var(--color-slate-400);
+  text-align: center;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+@utility container-default {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@utility gradient-text {
+  background: linear-gradient(to right, var(--color-brand-purple-glow), var(--color-brand-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility glow-purple {
+  box-shadow: 0 0 30px rgba(147, 51, 234, 0.15);
+}
+
+@utility glow-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* FAQ content transition */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Logo scroll track */
+.logo-track {
+  display: flex;
+  width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none !important;
+  }
+  .faq-content, .faq-icon {
+    transition: none;
+  }
+}
